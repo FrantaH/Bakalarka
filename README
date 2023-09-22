@@ -1,0 +1,24 @@
+
+Autor: František Horázný
+rok: 2020
+kontakt: fhorazny@gmail.com
+školní login: xhoraz02
+vedoucí: Igor Szöke
+
+
+Obsah CD:
+	grafy - složka obsahující vypočítaná data. Jsou zde různé xlsx soubory. Tyto soubory jsou popsány v /grafy/README
+	Recorder - složka obsahující statická vstupní data do programu a samotný software pro nahrávání. Obsah blíže popsán v /Recorder/README
+	src - složka obsahující zdrojové kódy samotné práce a binární soubory. Obsažen je také Makefile a /src/README s bližší specifikací
+	video_a_poster - složka s videem a plakátem vytvořeným podle zadání.
+	README - tento soubor.
+
+
+jak:
+	přeložit program - v adresáři /src/ spustit make
+	spustit program - v adresáři /src/ spustit make help a vybrat si z možností testů, poté například make test21
+	přeložit program na zvukovou kartu - v adresáři /src/ spustit make upload (pokud není karta připojena, binární soubor se na ní nenahraje, ale přeloží se)
+			toto je možné pouze s cross-compilerem, který byl dodán od Audified
+	přeložit program a připojit na zvukovou kartu - v adresáři /src/ spustit make connect
+			opět nutnost mít cross-compiler
+	nahrát záznamy pomocí zvukové karty - popsáno v /Recorder/README

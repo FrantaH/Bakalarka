@@ -1,0 +1,12 @@
+capture_i.c - kód pro běh na zvukové kartě
+capture_i - binární soubor pro běh na zvukové kartě
+coor.c - kód pro testování analytického řešení výpočtu polohy
+coor - přeložený coor.c
+voice_tracker.c - kód pro běh na laptopu, pracuje se statickými nahrávkami.
+voice_tracker - přeložený voice_tracker.c
+
+Makefile - možné spuštění:
+	make run - přeloží voice_tracker.c a spustí test1
+	make help - vypíše možnosti spuštění
+	make connect - překlad, upload a připojení na zvukovku
+	make testxx - spuštění testu xx (xx dle volby v make help)
