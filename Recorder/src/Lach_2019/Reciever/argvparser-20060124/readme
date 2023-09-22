@@ -1,0 +1,4 @@
+g++ -g -c argvparser.cpp -o argvparser.o
+
+
+ar -cru libargvparser.a argvparser.o

@@ -1,0 +1,43 @@
+Složka Recorder obsahuje zdrojové kódy, binárku i makefile a skript pro spouštění.
+
+Pro spuštění stačí spustit skript a nijak ho neměnit (je třeba mít vytvořenou správnou složku viz níže). Obsahuje správné parametry programu.
+před tím však je nutné nastavit IP adresu na stejnou síť jako má karta, například 147.229.14.26.
+Karta má IP 147.229.14.27, tuto IP lze jednoduše napsat do prohlížeče a připojit se na server karty
+Po každé nahrávce je nutné program celý znovu spustit (vypnout a znovu spustit skript)
+
+Doporučuji projít si run_recorder.sh, je jednoduchý na pochopení.
+
+Cílový adresář v skriptu run_recorder.sh je nutné i vytvořit (sám se nevytvoří)
+
+
+Tato složka obsahuje:
+README
+run_recorder.sh - skript pro spuštění záznamu nahrávky
+src - zdrojové kódy recordéru
+Reciever - binární soubor rekordéru
+nahravka_45sec.mp3 - nahrávka spouštěná na mobilním telefonu při testování
+
+test0_0_1 - test na souřadnici 0,0,1 v zatlumené místnosti
+test0_0_2 - test na souřadnici 0,0,2 v zatlumené místnosti
+test0_0_3 - test na souřadnici 0,0,3 v zatlumené místnosti
+test1_0_3 - test na souřadnici 1,0,3 v zatlumené místnosti
+test1_0_3_hudba - test na souřadnici 1,0,3 pouze hudba v zatlumené místnosti
+test1_0_3_hudba_001_hlas - test na souřadnici 0,0,1, ruch na souřadnici 1,0,3 v zatlumené místnosti
+test1_0_4 - test na souřadnici 1,0,4 v zatlumené místnosti
+test101_to_-101 - test v zatlumené místnosti nejprve na souřadnici 1,0,1 a pak změna zdroje na souřadnici -1,0,1
+test002_last - test na souřadnici 0,0,2 v zatlumené místnosti
+test003_last - test na souřadnici 0,0,3 v zatlumené místnosti
+test104_last - - test na souřadnici 1,0,4 v zatlumené místnosti (zdroj blízko zdi)
+test103_speech - v zatlumené místnosti, na souřadnicích 1,0,3 reálné mluvení a druhá polovina mluvení na -1,0,2
+test101hudba_001 - test na souřadnici 0,0,1 při ruchu hudby na souřadnici 1,0,1
+
+
+** testy v nezatlumené místnosti = špatné výsledky (použitelný pouze test_1_1) **
+test_1_1 - test na souřadnici 0,0,1 v nezatlumené místnosti
+test_2_2 - test na souřadnici 1,0,2  (nezatlumená místnost)
+test_3_0 - test na souřadnici 3,0,0  (nezatlumená místnost)
+test_3_1 - test na souřadnici 2,0,1 v nezatlumené místnosti
+test_3_3 - test na souřadnici 2,0,3  (nezatlumená místnost)
+test_4_6 - test na souřadnici 3,0,6  (nezatlumená místnost)
+test_30_32 - test na souřadnici -1,0,3 postupný pohyb na 1,0,3 (nezatlumená místnost)
+test_chuze - nahravka v nezatlumené místnosti člověka chůze směrem ke kříži u souřadnice x=0 a směrem od u souřadnice x=2
